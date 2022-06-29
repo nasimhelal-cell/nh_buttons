@@ -1,20 +1,25 @@
-body{
-   display: flex;
-   justify-content: center;
+body {
+    display: flex;
+    justify-content: center;
 }
-*{
+
+* {
     border: 1px solid black;
 }
-.btn1{
-   border: 1px solid red;
+
+.btn1 {
+    border: 1px solid red;
     color: red;
     border-radius: 100vmax;
     text-decoration: none;
     text-align: center;
     padding: 1em 3em;
-    
+    margin: 0;
+    list-style: none;
+    display: inline-block;
 }
-.btn1:hover{
+
+.btn1:hover {
     background: red;
     color: white;
 }
