@@ -1,11 +1,14 @@
 body {
     display: flex;
     justify-content: center;
+    gap: 1em;
 }
-
-* {
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+/* * {
     border: 1px solid black;
-}
+} */
 
 .btn1 {
     border: 1px solid red;
@@ -39,5 +42,38 @@ body {
 }
 .btn2:hover{
     background: white;
+    color: red;
+}
+
+/* button three css */
+.btn3{
+    border: 1px solid red;
+    text-decoration: none;
+    padding: 1em 3em;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    background: white;
+    color: red;
+    border-radius: 100vmax 0;
+}
+.btn3:hover {
+    background: red;
+    color: white;
+}
+/* button four css */
+.btn4{
+    border: 1px solid red;
+    text-decoration: none;
+    padding: 1em 3em;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    background:red ;
+    color:white ;
+    border-radius: 100vmax 0;
+}
+.btn4:hover {
+    background:white ;
     color: red;
 }
