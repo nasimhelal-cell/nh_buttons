@@ -23,3 +23,21 @@ body {
     background: red;
     color: white;
 }
+
+
+/* button two design  */
+.btn2{
+    border: 1px solid red;
+    text-decoration: none;
+    padding: 1em 3em;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    background: red;
+    color: white;
+    border-radius: 100vmax;
+}
+.btn2:hover{
+    background: white;
+    color: red;
+}
