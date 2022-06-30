@@ -1,0 +1,44 @@
+.outerbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 4em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 100vmax;
+    background: linear-gradient( rgb(221, 230, 96), rgb(43, 255, 0),rgb(255, 0, 170));
+    animation: rotate 1.5s linear infinite;
+}
+.btn5 {
+    transition-property: color, background;
+    transition-duration: 1000ms;
+    transition-timing-function: ease-in-out;
+}
+
+.outerbutton:hover .btn5 {
+    color: black;
+    background: white;
+}
+
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.btn5 {
+    text-decoration: none;
+    list-style: none;
+    background: #000;
+    color: white;
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    padding: .75em 1.25em;
+    border-radius: inherit;
+}

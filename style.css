@@ -3,12 +3,18 @@ body {
     justify-content: center;
     gap: 1em;
 }
-*,*:before,*:after{
+
+/* *{
+    border: 1px black solid;
+} */
+
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
-/* * {
-    border: 1px solid black;
-} */
+
+/* button one css  */
 
 .btn1 {
     border: 1px solid red;
@@ -20,6 +26,9 @@ body {
     margin: 0;
     list-style: none;
     display: inline-block;
+    cursor: pointer;
+    transition: 1000ms;
+    transition-property: background, color;
 }
 
 .btn1:hover {
@@ -29,7 +38,7 @@ body {
 
 
 /* button two design  */
-.btn2{
+.btn2 {
     border: 1px solid red;
     text-decoration: none;
     padding: 1em 3em;
@@ -39,14 +48,19 @@ body {
     background: red;
     color: white;
     border-radius: 100vmax;
+    cursor: pointer;
+    transition: 1000ms;
+    transition-property: background, color;
+
 }
-.btn2:hover{
+
+.btn2:hover {
     background: white;
     color: red;
 }
 
 /* button three css */
-.btn3{
+.btn3 {
     border: 1px solid red;
     text-decoration: none;
     padding: 1em 3em;
@@ -56,24 +70,34 @@ body {
     background: white;
     color: red;
     border-radius: 100vmax 0;
+    cursor: pointer;
+    transition: 1000ms;
+    transition-property: background, color;
+
 }
+
 .btn3:hover {
     background: red;
     color: white;
 }
+
 /* button four css */
-.btn4{
+.btn4 {
     border: 1px solid red;
     text-decoration: none;
     padding: 1em 3em;
     text-align: center;
     display: inline-block;
     list-style: none;
-    background:red ;
-    color:white ;
+    background: red;
+    color: white;
     border-radius: 100vmax 0;
+    cursor: pointer;
+    transition: 1000ms;
+    transition-property: background, color;
 }
+
 .btn4:hover {
-    background:white ;
+    background: white;
     color: red;
 }
