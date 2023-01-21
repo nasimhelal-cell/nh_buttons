@@ -24,7 +24,7 @@
     transition-duration: 1000ms;
     transition-timing-function: ease-in-out;
     position: absolute;
-    content: "button 6";
+    content: "Read More";
     display: flex;
     justify-content: center;
     align-items: center;

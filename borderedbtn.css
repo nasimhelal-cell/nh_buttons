@@ -1,0 +1,98 @@
+.btn {
+    background: rgb(51, 56, 55);
+    color: beige;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    position: relative;
+    transition: all .5s ease;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(51, 56, 55);
+}
+
+.btn::before {
+    position: absolute;
+    content: '';
+    width: 99.5%;
+    height: 2px;
+    background: rgb(51, 56, 55);
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s ease;
+    transform-origin: left;
+    transition-delay: .9s;
+}
+
+.btn::after {
+    position: absolute;
+    content: '';
+    width: 99.5%;
+    height: 2px;
+    background: rgb(51, 56, 55);
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: all .5s ease;
+    transform-origin: right;
+    transition-delay: .2s;
+}
+
+.btn:hover::after {
+    transform: scaleX(1);
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+}
+
+/* second css */
+.OuterBtn {
+    position: relative;
+    display: inline-block;
+}
+
+
+.OuterBtn::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 95%;
+    background: rgb(51, 56, 55);
+    left: 0;
+    bottom: 2px;
+    transition: all .5s ease;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition-delay: .5s;
+    z-index: 1;
+}
+
+.OuterBtn:hover::before {
+    transform: scaleY(1);
+}
+
+.OuterBtn::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 95%;
+    background: rgb(51, 56, 55);
+    right: 0;
+    bottom: 2px;
+    transition: all .5s ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition-delay: 1.5s;
+}
+
+.OuterBtn:hover::after {
+    transform: scaleY(1);
+}
